@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23c9653a-545e-47a5-a8ac-5b528e2df7ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Quoridor/ExtendedCell.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Quoridor/Cell.java" afterPath="$PROJECT_DIR$/src/Quoridor/Cell.java" />
     </list>
     <ignored path="Quoridor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -495,7 +493,11 @@
       <created>1350119471424</created>
       <updated>1350119471424</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created a branch to test some ideas">
+      <created>1350137299049</created>
+      <updated>1350137299049</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
