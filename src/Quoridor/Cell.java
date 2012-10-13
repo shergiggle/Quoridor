@@ -1,5 +1,7 @@
 package Quoridor;
 
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Pierzchalski
@@ -9,6 +11,8 @@ package Quoridor;
  */
 public class Cell {
     GamePiece piece;
+    enum Directions {};
+    Map<Directions, Cell> neighbouringCells;
     public void addPiece(GamePiece piece) {
         this.piece = piece;
     }
