@@ -1,6 +1,7 @@
 package org.pierzchalskishi.quoridor.fence;
 
-import org.pierzchalskishi.quoridor.Coordinate;
+import org.pierzchalskishi.quoridor.Game;
+import org.pierzchalskishi.quoridor.pawn.Coordinate;
 
 /**
  * Created with IntelliJ IDEA.
@@ -35,5 +36,9 @@ public class FenceCoordinate extends Coordinate {
         int result = super.hashCode();
         result = 31 * result + (orientation != null ? orientation.hashCode() : 0);
         return result;
+    }
+
+    public static boolean isValidCoordinate(FenceCoordinate fenceCoordinate) {
+        return fenceCoordinate.col < Game.BOARD_WIDTH - 1 && fenceCoordinate.row < Game.BOARD_WIDTH - 1;
     }
 }

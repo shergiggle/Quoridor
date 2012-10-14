@@ -1,6 +1,7 @@
 package org.pierzchalskishi.quoridor.board;
 
-import org.pierzchalskishi.quoridor.Coordinate;
+import org.pierzchalskishi.quoridor.Game;
+import org.pierzchalskishi.quoridor.pawn.Coordinate;
 import org.pierzchalskishi.quoridor.fence.Fence;
 import org.pierzchalskishi.quoridor.fence.FenceCoordinate;
 import org.pierzchalskishi.quoridor.pawn.Pawn;
@@ -17,8 +18,6 @@ import java.util.Set;
  * To change this template use File | Settings | File Templates.
  */
 public class Board {
-    private static int PAWNS_PER_SIDE = 9;
-    private static int FENCES_PER_SIZE = PAWNS_PER_SIDE - 1;
     private Map<Coordinate, Pawn> pawnCoordinateMap;
     private Map<FenceCoordinate, Fence> fenceCoordinateMap;
 
@@ -29,8 +28,8 @@ public class Board {
 
     public void print() {
         StringBuilder stringBuilder = new StringBuilder();
-        for (int row = 0; row < PAWNS_PER_SIDE; row++) {
-            for (int col = 0; col < PAWNS_PER_SIDE; col++) {
+        for (int row = 0; row < Game.BOARD_WIDTH; row++) {
+            for (int col = 0; col < Game.BOARD_WIDTH; col++) {
                 Coordinate coordinate = new Coordinate(row, col);
                 Pawn currentPawn = pawnCoordinateMap.get(coordinate);
                 if (currentPawn == null) {

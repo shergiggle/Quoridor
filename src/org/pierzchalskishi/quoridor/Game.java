@@ -8,4 +8,5 @@ package org.pierzchalskishi.quoridor;
  * To change this template use File | Settings | File Templates.
  */
 public class Game {
+    public static int BOARD_WIDTH = 9;//board width in pawn cells
 }

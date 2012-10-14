@@ -1,4 +1,6 @@
-package org.pierzchalskishi.quoridor;
+package org.pierzchalskishi.quoridor.pawn;
+
+import org.pierzchalskishi.quoridor.Game;
 
 /**
  * Created with IntelliJ IDEA.
@@ -40,5 +42,9 @@ public class Coordinate {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("(" + row + ", " + col + ")");
         return stringBuilder.toString();
+    }
+
+    public static boolean isValidCoordinate(Coordinate coordinate) {
+        return coordinate.row < Game.BOARD_WIDTH && coordinate.col < Game.BOARD_WIDTH;
     }
 }

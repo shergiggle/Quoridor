@@ -3,7 +3,7 @@ package org.pierzchalskishi.quoridor.board;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.pierzchalskishi.quoridor.Coordinate;
+import org.pierzchalskishi.quoridor.pawn.Coordinate;
 import org.pierzchalskishi.quoridor.pawn.Pawn;
 
 import static org.junit.Assert.assertTrue;
