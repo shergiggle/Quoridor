@@ -8,13 +8,13 @@ package org.pierzchalskishi.quoridor.pawn;
  * To change this template use File | Settings | File Templates.
  */
 public class Pawn {
-    String name = "O";
+    Character name = 'O';
 
-    public Pawn(String name) {
+    public Pawn(Character name) {
         this.name = name;
     }
 
     public String toString() {
-        return name;
+        return name.toString();
     }
 }
