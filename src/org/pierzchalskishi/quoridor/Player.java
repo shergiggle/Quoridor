@@ -1,11 +1,11 @@
-package Quoridor;
+package org.pierzchalskishi.quoridor;
 
 /**
  * Created with IntelliJ IDEA.
  * User: Pierzchalski
- * Date: 13/10/12
- * Time: 2:58 PM
+ * Date: 14/10/12
+ * Time: 6:14 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Pawn implements GamePiece {
+public class Player {
 }

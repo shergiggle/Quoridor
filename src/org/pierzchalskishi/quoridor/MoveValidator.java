@@ -1,11 +1,11 @@
-package Quoridor;
+package org.pierzchalskishi.quoridor;
 
 /**
  * Created with IntelliJ IDEA.
  * User: Pierzchalski
- * Date: 13/10/12
- * Time: 2:38 PM
+ * Date: 14/10/12
+ * Time: 6:15 PM
  * To change this template use File | Settings | File Templates.
  */
-public interface GamePiece {
+public class MoveValidator {
 }
