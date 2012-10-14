@@ -24,16 +24,16 @@ public class Coordinate {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (obj instanceof  Coordinate) {
-            return equals((Coordinate) obj);
-        } else {
-            return false;
-        }
-    }
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
 
-    private boolean equals(Coordinate coordinate) {
-        return this.row == coordinate.row && this.col == coordinate.col;
+        Coordinate that = (Coordinate) o;
+
+        if (col != that.col) return false;
+        if (row != that.row) return false;
+
+        return true;
     }
 
     public String toString() {

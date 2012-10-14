@@ -4,7 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.pierzchalskishi.quoridor.Coordinate;
-import org.pierzchalskishi.quoridor.Pawn;
+import org.pierzchalskishi.quoridor.pawn.Pawn;
 
 import static org.junit.Assert.assertTrue;
 
@@ -34,7 +34,16 @@ public void after() throws Exception {
 */ 
 @Test
 public void testPrint() throws Exception { 
-//TODO: Test goes here...
+    board = new Board();
+    Pawn pawn = new Pawn("X");
+    board.addPawn(pawn, new Coordinate(1,1));
+    board.print();
+    System.out.println("new board");
+    board.movePawn(pawn, new Coordinate(1,3));
+    board.print();
+    System.out.println("new board again");
+    board.movePawn(pawn, new Coordinate(5,7));
+    board.print();
 }
 
 /** 
@@ -48,9 +57,9 @@ public void testAddPawn() throws Exception {
     Pawn pawn = new Pawn("A");
     Pawn pawn1 = new Pawn("B");
     board.addPawn(pawn, coordinate);
-    assertTrue(board.cellMap.containsKey(coordinate));
-    assertTrue(board.cellMap.get(coordinate) != null);
-    assertTrue(board.cellMap.get(coordinate).pawn == pawn);
+    assertTrue(board.pawnCoordinateMap.containsKey(coordinate));
+    assertTrue(board.pawnCoordinateMap.get(coordinate) != null);
+    assertTrue(board.pawnCoordinateMap.get(coordinate) == pawn);
     assertTrue(board.findPawn(pawn) != null);
     assertTrue(board.findPawn(pawn) == coordinate);
 } 

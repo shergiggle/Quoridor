@@ -1,7 +1,9 @@
 package org.pierzchalskishi.quoridor.board;
 
 import org.pierzchalskishi.quoridor.Coordinate;
-import org.pierzchalskishi.quoridor.Pawn;
+import org.pierzchalskishi.quoridor.fence.Fence;
+import org.pierzchalskishi.quoridor.fence.FenceCoordinate;
+import org.pierzchalskishi.quoridor.pawn.Pawn;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,19 +17,22 @@ import java.util.Set;
  * To change this template use File | Settings | File Templates.
  */
 public class Board {
-    private static int CELLS_PER_SIDE = 9;
-    Map<Coordinate, Pawn> cellMap;
+    private static int PAWNS_PER_SIDE = 9;
+    private static int FENCES_PER_SIZE = PAWNS_PER_SIDE - 1;
+    private Map<Coordinate, Pawn> pawnCoordinateMap;
+    private Map<FenceCoordinate, Fence> fenceCoordinateMap;
 
     public Board() {
-        cellMap = new HashMap<Coordinate, Pawn>();
+        pawnCoordinateMap = new HashMap<Coordinate, Pawn>();
+        fenceCoordinateMap = new HashMap<FenceCoordinate, Fence>();
     }
 
     public void print() {
         StringBuilder stringBuilder = new StringBuilder();
-        for (int row = 0; row < CELLS_PER_SIDE; row++) {
-            for (int col = 0; col < CELLS_PER_SIDE; col++) {
+        for (int row = 0; row < PAWNS_PER_SIDE; row++) {
+            for (int col = 0; col < PAWNS_PER_SIDE; col++) {
                 Coordinate coordinate = new Coordinate(row, col);
-                Pawn currentPawn = cellMap.get(coordinate);
+                Pawn currentPawn = pawnCoordinateMap.get(coordinate);
                 if (currentPawn == null) {
                     stringBuilder.append(".");
                 } else {
@@ -40,21 +45,33 @@ public class Board {
     }
 
     public void addPawn(Pawn pawn, Coordinate coordinate) {
-        cellMap.put(coordinate, pawn);
+        pawnCoordinateMap.put(coordinate, pawn);
     }
 
     public void movePawn(Pawn pawn, Coordinate coordinate) {
-        cellMap.remove(this.findPawn(pawn));
-        cellMap.put(coordinate, pawn);
+        pawnCoordinateMap.remove(this.findPawn(pawn));
+        pawnCoordinateMap.put(coordinate, pawn);
     }
 
-    public Coordinate findPawn(org.pierzchalskishi.quoridor.Pawn pawn) {
-        Set<Coordinate> coordinates = cellMap.keySet();
+    public Coordinate findPawn(Pawn pawn) {
+        Set<Coordinate> coordinates = pawnCoordinateMap.keySet();
         for (Coordinate coordinate : coordinates) {
-            if (cellMap.get(coordinate) == pawn) {
+            if (pawnCoordinateMap.get(coordinate) == pawn) {
                 return coordinate;
             }
         }
         return null;
+    }
+
+    public Pawn pawnAt(Coordinate coordinate) {
+        return pawnCoordinateMap.get(coordinate);
+    }
+
+    public void placeFence(Fence fence, FenceCoordinate fenceCoordinate) {
+        fenceCoordinateMap.put(fenceCoordinate, fence);
+    }
+
+    public Fence fenceAt(FenceCoordinate fenceCoordinate) {
+        return fenceCoordinateMap.get(fenceCoordinate);
     }
 }

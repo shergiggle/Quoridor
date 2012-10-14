@@ -1,4 +1,4 @@
-package org.pierzchalskishi.quoridor;
+package org.pierzchalskishi.quoridor.pawn;
 
 /**
  * Created with IntelliJ IDEA.
