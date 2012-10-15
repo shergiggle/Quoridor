@@ -29,6 +29,9 @@ public class Game {
         player2 = new Player(b, 0);
         gameBoard.print();
         currentPlayer = player1;
+    }
+
+    public void startGame() {
         while (!playerVictory(currentPlayer)) {
             Coordinate moveCoordinate = currentPlayer.getMove();
             gameBoard.movePawn(currentPlayer.pawn, moveCoordinate);
