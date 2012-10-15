@@ -55,7 +55,10 @@ public void testPrint() throws Exception {
     board.putFence(new Fence(), new FenceCoordinate(3,3,Orientation.VERTICAL));
     board.print();
     System.out.println("Add a fence that shouldn't render");
-    board.putFence(new Fence(), new FenceCoordinate(Game.BOARD_WIDTH - 1, Game.BOARD_WIDTH - 1, Orientation.VERTICAL));
+    board.putFence(new Fence(), new FenceCoordinate(3, Game.BOARD_WIDTH - 1, Orientation.VERTICAL));
+    board.print();
+    System.out.println("add another fence that shouldn't render, at the bottom");
+    board.putFence(new Fence(), new FenceCoordinate(Game.BOARD_WIDTH - 1, 3, Orientation.HORIZONTAL));
     board.print();
 }
 

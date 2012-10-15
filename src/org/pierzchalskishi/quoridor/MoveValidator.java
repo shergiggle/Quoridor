@@ -8,4 +8,8 @@ package org.pierzchalskishi.quoridor;
  * To change this template use File | Settings | File Templates.
  */
 public class MoveValidator {
+
+    public MoveValidator(){
+
+    }
 }
