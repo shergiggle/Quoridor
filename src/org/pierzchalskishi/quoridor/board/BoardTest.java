@@ -35,7 +35,7 @@ public void after() throws Exception {
 @Test
 public void testPrint() throws Exception { 
     board = new Board();
-    Pawn pawn = new Pawn("X");
+    Pawn pawn = new Pawn('X');
     board.addPawn(pawn, new Coordinate(1,1));
     board.print();
     System.out.println("new board");
@@ -54,8 +54,8 @@ public void testPrint() throws Exception {
 @Test
 public void testAddPawn() throws Exception {
     Coordinate coordinate = new Coordinate(2, 3);
-    Pawn pawn = new Pawn("A");
-    Pawn pawn1 = new Pawn("B");
+    Pawn pawn = new Pawn('A');
+    Pawn pawn1 = new Pawn('B');
     board.addPawn(pawn, coordinate);
     assertTrue(board.pawnCoordinateMap.containsKey(coordinate));
     assertTrue(board.pawnCoordinateMap.get(coordinate) != null);
@@ -72,8 +72,8 @@ public void testAddPawn() throws Exception {
 @Test
 public void testMovePawn() throws Exception { 
     board = new Board();
-    Pawn A = new Pawn("A");
-    Pawn B = new Pawn("B");
+    Pawn A = new Pawn('A');
+    Pawn B = new Pawn('B');
     board.addPawn(A, new Coordinate(1,1));
     board.addPawn(B, new Coordinate(2,4));
     board.movePawn(A, new Coordinate(2,1));

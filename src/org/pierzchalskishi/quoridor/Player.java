@@ -8,9 +8,10 @@ package org.pierzchalskishi.quoridor;
  * To change this template use File | Settings | File Templates.
  */
 public class Player {
-    Character player;
+    Character symbol;
+
     public Player(Character symbol){
-        this.player = symbol;
+        this.symbol = symbol;
     }
 
 
