@@ -1,5 +1,7 @@
 package org.pierzchalskishi.quoridor;
 
+import org.pierzchalskishi.quoridor.pawn.Pawn;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Pierzchalski
@@ -8,11 +10,13 @@ package org.pierzchalskishi.quoridor;
  * To change this template use File | Settings | File Templates.
  */
 public class Player {
-    Character symbol;
+    Pawn pawn;
 
-    public Player(Character symbol){
-        this.symbol = symbol;
+    public Player(Pawn pawn){
+        this.pawn = pawn;
     }
 
-
+    public Pawn getPawn() {
+        return pawn;
+    }
 }
