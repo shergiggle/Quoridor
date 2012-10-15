@@ -40,8 +40,37 @@ public class Board {
                 }
                 FenceCoordinate fenceCoordinateToRight = new FenceCoordinate(row, col, Orientation.VERTICAL);
                 FenceCoordinate fenceCoordinateToRightUp = new FenceCoordinate(row - 1, col, Orientation.VERTICAL);
-                if (FenceCoordinate.isValidCoordinate(fenceCoordinateToRight)) {
+                if (FenceCoordinate.isValidCoordinate(fenceCoordinateToRight)
+                        && fenceCoordinateMap.get(fenceCoordinateToRight) != null) {
+                    stringBuilder.append("|");
+                } else if (FenceCoordinate.isValidCoordinate(fenceCoordinateToRightUp)
+                        && fenceCoordinateMap.get(fenceCoordinateToRightUp) != null) {
+                    stringBuilder.append("|");
+                } else {
+                    stringBuilder.append(" ");
+                }
+            }
+            stringBuilder.append("\n");
 
+            for (int col = 0; col < Game.BOARD_WIDTH; col++) {
+                FenceCoordinate fenceCoordinate = new FenceCoordinate(row, col, Orientation.HORIZONTAL);
+                FenceCoordinate fenceCoordinateLeft = new FenceCoordinate(row, col - 1, Orientation.HORIZONTAL);
+                if (FenceCoordinate.isValidCoordinate(fenceCoordinate)
+                        && fenceCoordinateMap.get(fenceCoordinate) != null) {
+                    stringBuilder.append("-");
+                } else if (FenceCoordinate.isValidCoordinate(fenceCoordinateLeft)
+                        && fenceCoordinateMap.get(fenceCoordinateLeft) != null) {
+                    stringBuilder.append("-");
+                } else {
+                    stringBuilder.append(" ");
+                }
+                FenceCoordinate fenceCoordinateVertical = new FenceCoordinate(row, col, Orientation.VERTICAL);
+                if (fenceCoordinateMap.get(fenceCoordinate) != null) {
+                    stringBuilder.append("-");
+                } else if (fenceCoordinateMap.get(fenceCoordinateVertical) != null) {
+                    stringBuilder.append("|");
+                } else {
+                    stringBuilder.append(" ");
                 }
             }
             stringBuilder.append("\n");
@@ -72,7 +101,7 @@ public class Board {
         return pawnCoordinateMap.get(coordinate);
     }
 
-    public void placeFence(Fence fence, FenceCoordinate fenceCoordinate) {
+    public void putFence(Fence fence, FenceCoordinate fenceCoordinate) {
         fenceCoordinateMap.put(fenceCoordinate, fence);
     }
 

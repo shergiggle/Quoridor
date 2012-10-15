@@ -3,6 +3,9 @@ package org.pierzchalskishi.quoridor.board;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.pierzchalskishi.quoridor.fence.Fence;
+import org.pierzchalskishi.quoridor.fence.FenceCoordinate;
+import org.pierzchalskishi.quoridor.fence.Orientation;
 import org.pierzchalskishi.quoridor.pawn.Coordinate;
 import org.pierzchalskishi.quoridor.pawn.Pawn;
 
@@ -39,10 +42,16 @@ public void testPrint() throws Exception {
     board.addPawn(pawn, new Coordinate(1,1));
     board.print();
     System.out.println("new board");
-    board.movePawn(pawn, new Coordinate(1,3));
+    board.movePawn(pawn, new Coordinate(1, 3));
     board.print();
     System.out.println("new board again");
-    board.movePawn(pawn, new Coordinate(5,7));
+    board.movePawn(pawn, new Coordinate(5, 7));
+    board.print();
+    System.out.println("add a fence");
+    board.putFence(new Fence(), new FenceCoordinate(0, 0, Orientation.HORIZONTAL));
+    board.print();
+    System.out.println("add another fence");
+    board.putFence(new Fence(), new FenceCoordinate(3,3,Orientation.VERTICAL));
     board.print();
 }
 
@@ -91,7 +100,14 @@ public void testMovePawn() throws Exception {
 @Test
 public void testFindPawn() throws Exception { 
 //TODO: Test goes here... 
-} 
+}
 
-
-} 
+    @Test
+public void testPlaceFence() throws Exception {
+        board = new Board();
+        Fence fence = new Fence();
+        board.putFence(fence, new FenceCoordinate(0, 0, Orientation.HORIZONTAL));
+        assertTrue(board.fenceAt(new FenceCoordinate(0,0,Orientation.HORIZONTAL)) != null);
+        assertTrue(board.fenceAt(new FenceCoordinate(0,0,Orientation.HORIZONTAL)) == fence);
+}
+}

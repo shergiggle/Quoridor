@@ -45,6 +45,7 @@ public class Coordinate {
     }
 
     public static boolean isValidCoordinate(Coordinate coordinate) {
-        return coordinate.row < Game.BOARD_WIDTH && coordinate.col < Game.BOARD_WIDTH;
+        return coordinate.row >= 0 && coordinate.row < Game.BOARD_WIDTH
+                && coordinate.col >= 0 && coordinate.col < Game.BOARD_WIDTH;
     }
 }

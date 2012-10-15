@@ -39,6 +39,7 @@ public class FenceCoordinate extends Coordinate {
     }
 
     public static boolean isValidCoordinate(FenceCoordinate fenceCoordinate) {
-        return fenceCoordinate.col < Game.BOARD_WIDTH - 1 && fenceCoordinate.row < Game.BOARD_WIDTH - 1;
+        return  Coordinate.isValidCoordinate((Coordinate) fenceCoordinate)
+                && fenceCoordinate.col < Game.BOARD_WIDTH - 1 && fenceCoordinate.row < Game.BOARD_WIDTH - 1;
     }
 }
