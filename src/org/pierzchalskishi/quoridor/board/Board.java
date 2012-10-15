@@ -52,28 +52,32 @@ public class Board {
             }
             stringBuilder.append("\n");
 
-            for (int col = 0; col < Game.BOARD_WIDTH; col++) {
-                FenceCoordinate fenceCoordinate = new FenceCoordinate(row, col, Orientation.HORIZONTAL);
-                FenceCoordinate fenceCoordinateLeft = new FenceCoordinate(row, col - 1, Orientation.HORIZONTAL);
-                if (FenceCoordinate.isValidCoordinate(fenceCoordinate)
-                        && fenceCoordinateMap.get(fenceCoordinate) != null) {
-                    stringBuilder.append("-");
-                } else if (FenceCoordinate.isValidCoordinate(fenceCoordinateLeft)
-                        && fenceCoordinateMap.get(fenceCoordinateLeft) != null) {
-                    stringBuilder.append("-");
-                } else {
-                    stringBuilder.append(" ");
+            if (row < Game.BOARD_WIDTH) {
+                for (int col = 0; col < Game.BOARD_WIDTH; col++) {
+                    FenceCoordinate fenceCoordinate = new FenceCoordinate(row, col, Orientation.HORIZONTAL);
+                    FenceCoordinate fenceCoordinateLeft = new FenceCoordinate(row, col - 1, Orientation.HORIZONTAL);
+                    if (FenceCoordinate.isValidCoordinate(fenceCoordinate)
+                            && fenceCoordinateMap.get(fenceCoordinate) != null) {
+                        stringBuilder.append("-");
+                    } else if (FenceCoordinate.isValidCoordinate(fenceCoordinateLeft)
+                            && fenceCoordinateMap.get(fenceCoordinateLeft) != null) {
+                        stringBuilder.append("-");
+                    } else {
+                        stringBuilder.append(" ");
+                    }
+                    FenceCoordinate fenceCoordinateVertical = new FenceCoordinate(row, col, Orientation.VERTICAL);
+                    if (FenceCoordinate.isValidCoordinate(fenceCoordinate)
+                            && fenceCoordinateMap.get(fenceCoordinate) != null) {
+                        stringBuilder.append("-");
+                    } else if (FenceCoordinate.isValidCoordinate(fenceCoordinateVertical)
+                            && fenceCoordinateMap.get(fenceCoordinateVertical) != null) {
+                        stringBuilder.append("|");
+                    } else {
+                        stringBuilder.append(" ");
+                    }
                 }
-                FenceCoordinate fenceCoordinateVertical = new FenceCoordinate(row, col, Orientation.VERTICAL);
-                if (fenceCoordinateMap.get(fenceCoordinate) != null) {
-                    stringBuilder.append("-");
-                } else if (fenceCoordinateMap.get(fenceCoordinateVertical) != null) {
-                    stringBuilder.append("|");
-                } else {
-                    stringBuilder.append(" ");
-                }
+                stringBuilder.append("\n");
             }
-            stringBuilder.append("\n");
         }
         System.out.print(stringBuilder.toString());
     }

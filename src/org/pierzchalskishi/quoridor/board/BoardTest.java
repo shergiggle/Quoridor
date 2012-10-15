@@ -3,6 +3,7 @@ package org.pierzchalskishi.quoridor.board;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.pierzchalskishi.quoridor.Game;
 import org.pierzchalskishi.quoridor.fence.Fence;
 import org.pierzchalskishi.quoridor.fence.FenceCoordinate;
 import org.pierzchalskishi.quoridor.fence.Orientation;
@@ -52,6 +53,9 @@ public void testPrint() throws Exception {
     board.print();
     System.out.println("add another fence");
     board.putFence(new Fence(), new FenceCoordinate(3,3,Orientation.VERTICAL));
+    board.print();
+    System.out.println("Add a fence that shouldn't render");
+    board.putFence(new Fence(), new FenceCoordinate(Game.BOARD_WIDTH - 1, Game.BOARD_WIDTH - 1, Orientation.VERTICAL));
     board.print();
 }
 
