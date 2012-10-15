@@ -29,7 +29,25 @@ public class Board {
 
     public void print() {
         StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("   ");
+        if (Game.BOARD_WIDTH >= 10) {
+            stringBuilder.append(" ");
+        }
+        for (int col = 0; col < Game.BOARD_WIDTH; col++) {
+            int startChar = 'a';
+            int colAsCharInt = startChar + col;
+            char colAsChar = (char) colAsCharInt;
+
+            stringBuilder.append(colAsChar);
+            stringBuilder.append(' ');
+        }
+        stringBuilder.append("\n");
         for (int row = 0; row < Game.BOARD_WIDTH; row++) {
+            if (row + 1 < 10 && Game.BOARD_WIDTH >= 10) {
+                stringBuilder.append(" ");
+            }
+            stringBuilder.append((row + 1));
+            stringBuilder.append(": ");
             for (int col = 0; col < Game.BOARD_WIDTH; col++) {
                 Coordinate coordinate = new Coordinate(row, col);
                 Pawn currentPawn = pawnCoordinateMap.get(coordinate);
@@ -51,6 +69,7 @@ public class Board {
                 }
             }
             stringBuilder.append("\n");
+            stringBuilder.append("   ");
 
             if (row < Game.BOARD_WIDTH) {
                 for (int col = 0; col < Game.BOARD_WIDTH; col++) {
@@ -111,5 +130,12 @@ public class Board {
 
     public Fence fenceAt(FenceCoordinate fenceCoordinate) {
         return fenceCoordinateMap.get(fenceCoordinate);
+    }
+
+    public Board copy() {
+        Board boardCopy = new Board();
+        boardCopy.fenceCoordinateMap = new HashMap<FenceCoordinate, Fence>(this.fenceCoordinateMap);
+        boardCopy.pawnCoordinateMap = new HashMap<Coordinate, Pawn>(this.pawnCoordinateMap);
+        return boardCopy;
     }
 }

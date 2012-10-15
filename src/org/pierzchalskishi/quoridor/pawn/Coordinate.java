@@ -40,7 +40,8 @@ public class Coordinate {
 
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("(" + row + ", " + col + ")");
+        char colAsChar = (char) ((int) 'a' + col);
+        stringBuilder.append("(" + (row + 1) + colAsChar + ")");
         return stringBuilder.toString();
     }
 

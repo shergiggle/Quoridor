@@ -61,16 +61,16 @@
       <file leaf-file-name="BoardTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/board/BoardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="39" selection-start="1081" selection-end="1082" vertical-scroll-proportion="0.0">
+            <state line="47" column="36" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Board.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/board/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="69" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0">
+            <state line="45" column="54" selection-start="1510" selection-end="1510" vertical-scroll-proportion="1.1724138">
               <folding />
             </state>
           </provider>
@@ -85,22 +85,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Coordinate.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/pawn/Coordinate.java">
+      <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="39" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="19" column="37" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2025#2033#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/Game.java">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.9294606">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="2" column="39" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,26 +109,20 @@
       <file leaf-file-name="MoveValidator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/MoveValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlacePawnMove.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/move/PlacePawnMove.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="39" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlaceFenceMove.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/move/PlaceFenceMove.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="4" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="175" column="20" selection-start="9000" selection-end="9000" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#691#703#0" expanded="true" />
+                <element signature="e#3640#3652#0" expanded="true" />
+                <element signature="e#5804#5821#0" expanded="true" />
+                <element signature="e#6097#6114#0" expanded="true" />
+                <element signature="e#6500#6517#0" expanded="true" />
+                <element signature="e#7453#7470#0" expanded="true" />
+                <element signature="e#7854#7871#0" expanded="true" />
+                <element signature="e#9327#9339#0" expanded="true" />
+                <element signature="e#9441#9453#0" expanded="true" />
+                <element signature="e#9784#9796#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -135,10 +130,19 @@
       <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="44" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0">
+            <state line="28" column="40" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Coordinate.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/pawn/Coordinate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="55" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -167,17 +171,18 @@
       <list>
         <option value="$PROJECT_DIR$/src/Quoridor/BoardCell.java" />
         <option value="$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/pawn/Pawn.java" />
-        <option value="$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/pawn/Coordinate.java" />
         <option value="$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/fence/FenceCoordinate.java" />
         <option value="$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/fence/Fence.java" />
-        <option value="$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/board/Board.java" />
-        <option value="$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/MoveValidator.java" />
         <option value="$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/pawn/Move.java" />
         <option value="$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/move/PlacePawnMove.java" />
         <option value="$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/move/PlaceFenceMove.java" />
         <option value="$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/board/BoardTest.java" />
+        <option value="$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/Main.java" />
+        <option value="$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/pawn/Coordinate.java" />
+        <option value="$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/MoveValidator.java" />
         <option value="$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/Player.java" />
         <option value="$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/Game.java" />
+        <option value="$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/board/Board.java" />
       </list>
     </option>
   </component>
@@ -295,72 +300,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quoridor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quoridor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quoridor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="move" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quoridor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quoridor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quoridor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fence" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quoridor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quoridor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quoridor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="board" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -378,7 +317,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.BoardTest.testPrint">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="BoardTest.testPrint" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="Quoridor" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -419,6 +358,22 @@
       </option>
       <envs />
       <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.pierzchalskishi.quoridor.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Quoridor" />
+      <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -540,9 +495,10 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.BoardTest.testPrint" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.BoardTest.testPlaceFence" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -580,26 +536,26 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291592" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24981017" sideWeight="0.0" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981017" sideWeight="0.90924656" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09075342" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34851936" sideWeight="0.07191781" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34851936" sideWeight="0.9160959" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291592" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -668,20 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/pawn/Coordinate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="39" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/fence/Fence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/fence/FenceCoordinate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="19" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.0">
@@ -692,13 +634,6 @@
     <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/move/Move.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="0" selection-start="226" selection-end="226" vertical-scroll-proportion="0.3846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/MoveValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -717,35 +652,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/board/Board.java">
+    <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/board/BoardTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="69" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0">
+        <state line="47" column="36" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/board/BoardTest.java">
+    <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/pawn/Coordinate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="39" selection-start="1081" selection-end="1082" vertical-scroll-proportion="0.0">
+        <state line="36" column="55" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/MoveValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="175" column="20" selection-start="9000" selection-end="9000" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#691#703#0" expanded="true" />
+            <element signature="e#3640#3652#0" expanded="true" />
+            <element signature="e#5804#5821#0" expanded="true" />
+            <element signature="e#6097#6114#0" expanded="true" />
+            <element signature="e#6500#6517#0" expanded="true" />
+            <element signature="e#7453#7470#0" expanded="true" />
+            <element signature="e#7854#7871#0" expanded="true" />
+            <element signature="e#9327#9339#0" expanded="true" />
+            <element signature="e#9441#9453#0" expanded="true" />
+            <element signature="e#9784#9796#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="39" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="44" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0">
+        <state line="28" column="40" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/fence/Fence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.9294606">
+        <state line="19" column="37" selection-start="567" selection-end="567" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2025#2033#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/pierzchalskishi/quoridor/board/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="54" selection-start="1510" selection-end="1510" vertical-scroll-proportion="1.1724138">
+          <folding />
         </state>
       </provider>
     </entry>
